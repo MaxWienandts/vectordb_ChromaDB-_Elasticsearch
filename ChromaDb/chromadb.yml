@@ -1,0 +1,33 @@
+# Update conda: conda update -n base -c defaults conda
+# Create: conda env create --file chromadb.yml
+# Remove: conda remove --name chromadb --all
+# Activate: conda activate chromadb
+# To get all libraries versions: pip list --format=freeze > requirements.txt
+
+name: chromadb
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python==3.10
+  - pip
+  - pandas
+  - matplotlib
+  - jupyterlab
+  - PyPDF2
+  - openai
+  - chromadb
+  - langchain
+  - langchain-community
+  - langchain-core
+  - langchain-chroma
+  - langchain-experimental
+
+  - pip:
+      - langchain_openai
+
+
+
+
